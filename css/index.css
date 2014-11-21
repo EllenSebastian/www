@@ -225,6 +225,16 @@ a{
     height:50%;
     align: top;
 }
+
+.smalltextinput{
+    margin:auto;
+    font-size: 20px;
+    border-color: #FF0040;
+    border-width: 3px;
+    padding:25px;
+    width: 20%;
+    margin-bottom:30px;
+}
 .inputcontainer{
 
 
@@ -232,5 +242,10 @@ a{
 
 .note{
     font-size:25px;
+    text-align:center;
+}
+
+.smallnote{
+    font-size:18px;
     text-align:center;
 }
