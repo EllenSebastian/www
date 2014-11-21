@@ -33,16 +33,23 @@
     <body>
 
         <div id="normal-header" class="normalheader">
-            <p class="headerText">List your space<p>
+            <p class="headerText">Confirm your listing<p>
         </div>
         <div class="inputbody">
-            <p class="note"> How much do you </p><p class="note">want to charge? </p><br/><br/>
-            <p class="smallnote"> Enter your price in dollars per hour.  </p><br/><br/>
-        
-           <input placeholder="10" type="text" class="smalltextinput form-control" id="inputSuccess3" aria-describedby="inputSuccess3Status">
+            <table class="confirmtable"> 
+                <tr><td class='confirm'>Name</td><td class='confirm gray'>Relaxing Getaway</td></tr>
+                <tr><td class='confirm'>Description</td><td class='confirm gray'>Quiet, serene space for a quick nap or call</td></tr>
+                <tr><td class='confirm'>Location</td><td class='confirm gray'>101 University Avenue</td></tr>
+                <tr><td class='confirm'>Additional info</td><td class='confirm gray'>Second floor</td></tr>
+                <tr><td class='confirm'>Amenities</td><td class='confirm gray'>Wifi, power sockets, peace and quiet</td></tr>
+                <tr><td class='confirm'>Price</td><td class='confirm gray'>$10/hour</td></tr>
+                <tr><td class='confirm'>Photos</td><td class='confirm gray'><img style="width:90%" src='img/host_your_space.jpg'/></td></tr>
+
+            </table>
+
         </div>
         <div class="footer">
-            <FORM METHOD="LINK" ACTION="host-confirm.html">
+            <FORM METHOD="LINK" ACTION="host-confirmed.html">
                 <INPUT TYPE="submit" VALUE="Next" style="font-size:20px" class="centered btn btn-primary btn-lg">
             </FORM>
         </div>
