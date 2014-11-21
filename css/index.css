@@ -275,3 +275,32 @@ a{
     border: 1px solid #FF0040;
     margin: auto;
 }
+
+.scrollable {
+    margin-left: 10%;
+    border: solid;
+    border-color: #FF0040;
+    border-width: 3px;
+    padding:25px;
+    width: 80%;
+    margin-bottom:30px;
+    height: 70%;
+    overflow:scroll;
+    overflow-x:hidden;
+    overflow-y:scroll;
+}
+
+.bordered-listing {
+    font-size: 30px;
+    text-align: center;
+    color: #FF0040;
+    border: solid;
+    margin-left: 10px;
+    border-width: 1px;
+    border-color: #FF0040;
+    width: 95%;
+}
+
+.listing-edit-button{
+    margin: 30px;
+}
