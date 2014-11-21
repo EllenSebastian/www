@@ -26,21 +26,51 @@
         <meta name="msapplication-tap-highlight" content="no" />
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
+         <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>QuickSpace</title>
     </head>
     <body>
-        <div class="app">
-            <h1>QuickSpace</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Your shitty Device is Ready Motherfucker</p>
+        <div class="container-fluid">
+            <div id="top-image-wrapper" class="row top">
+                <img id="top-image" src="img/find_a_space.jpg">
+            </div>
+            <div id="bottom-image-wrapper" class="row bottom">
+                <img id="bottom-image" src="img/host_your_space.jpg">
             </div>
         </div>
         <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
         <script type="text/javascript">
             app.initialize();
+        </script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript">
+            
+            /*
+            var topImage = document.getElementById("top-image");
+            var bottomImage = document.getElementById("bottom-image");
+            var topImageWrapper = document.getElementById("top-image-wrapper");
+            var bottomImageWrapper = document.getElementById("bottom-image-wrapper");
+            function resizeImg() {
+                var thisImg= $('#top-image-wrapper');
+                var refH = thisImg.height();
+                var refW = thisImg.width();
+                var refRatio = refW/refH;
+
+                var imgH = thisImg.children("#top-image").height();
+                var imgW = thisImg.children("#top-image").width();
+
+
+
+            }
+
+            $(document).ready(resizeImg())
+
+            $(window).resize(function(){
+                resizeImg();
+            });
+*/
         </script>
     </body>
 </html>
