@@ -118,18 +118,28 @@ h1 {
     -webkit-animation:fade 3000ms infinite;
 }
 
+.header{ 
+    position:absolute;
+    height:30%;
+    background-color:white;
+    width: 100%;
+
+}
+
 .top {
     position: absolute;
-    height: 50%;
+    height: 35%;
     width: 100%;
+    background-color:white;
+    top:30%;
 }
 
 .bottom {
-    background-color: green;
+    background-color: white;
     position: absolute;
-    height: 50%;
+    height: 35%;
     width: 100%;
-    top: 50%;
+    top: 65%;
 }
 
 img {
@@ -138,7 +148,20 @@ img {
     display:inline-block;
     position:relative;
 }
+.centerize { 
+    text-align: center;
+}
 
-button{ 
-        position:absolute;
+wrapper {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.centered {
+    margin:0 auto;
+    display:block;
+    text-align: center;
+    top: 50%;
+    font-size: 20px;
+
 }
