@@ -36,13 +36,16 @@
             <p class="headerText">List your space<p>
         </div>
         <div class="inputbody">
-            <input placeholder="LOCATION " type="text" class="textinput form-control" id="inputSuccess3" aria-describedby="inputSuccess3Status">
-            <input placeholder="Quick description of your space" type="text" height="500" class="textinput bigtextinput form-control" id="inputSuccess3" aria-describedby="inputSuccess3Status">
+            <p class="note"> Where is your space located? </p>
+            <input placeholder="Enter address or choose location" type="text" class="textinput form-control" id="inputSuccess3" aria-describedby="inputSuccess3Status">
+            <input placeholder="Additional location info (door codes, etc)" type="text" class="textinput form-control" id="inputSuccess3" aria-describedby="inputSuccess3Status">
+
+            <img id="bottom-image" src="img/map.png">
         </div>
         <p> This information will show up in your listing to people browsing for a space.</p> 
         <div class="footer">
             <FORM METHOD="LINK" ACTION="host-location.html">
-                <INPUT TYPE="submit" VALUE="For Hosts" class="centered btn btn-primary btn-lg">
+                <INPUT TYPE="submit" VALUE="Next" style="font-size:20px" class="centered btn btn-primary btn-lg">
             </FORM>
         </div>
         <script type="text/javascript" src="cordova.js"></script>
@@ -51,32 +54,5 @@
             app.initialize();
         </script>
         <script type="text/javascript" src="js/bootstrap.js"></script>
-        <script type="text/javascript">
-            
-            /*
-            var topImage = document.getElementById("top-image");
-            var bottomImage = document.getElementById("bottom-image");
-            var topImageWrapper = document.getElementById("top-image-wrapper");
-            var bottomImageWrapper = document.getElementById("bottom-image-wrapper");
-            function resizeImg() {
-                var thisImg= $('#top-image-wrapper');
-                var refH = thisImg.height();
-                var refW = thisImg.width();
-                var refRatio = refW/refH;
-
-                var imgH = thisImg.children("#top-image").height();
-                var imgW = thisImg.children("#top-image").width();
-
-
-
-            }
-
-            $(document).ready(resizeImg())
-
-            $(window).resize(function(){
-                resizeImg();
-            });
-*/
-        </script>
     </body>
 </html>
