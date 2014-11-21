@@ -36,15 +36,27 @@
             <p class="headerText">List your space<p>
         </div>
         <div class="inputbody">
-            <p class="note"> Where is your space located? </p>
-            <input placeholder="Enter address or choose location" type="text" class="textinput form-control" id="inputSuccess3" aria-describedby="inputSuccess3Status">
-            <input placeholder="Additional location info (door codes, etc)" type="text" class="textinput form-control" id="inputSuccess3" aria-describedby="inputSuccess3Status">
+            <p class="note"> Add photos of your space </p>
+            
 
-            <img id="bottom-image" src="img/map.png">
+            <FORM METHOD="LINK" ACTION="host-name.html">
+                <INPUT TYPE="submit" style="margin-top:30%" VALUE="Take a picture" class="centered btn btn-primary btn-lg">
+            </FORM>
+
+               <!--<button onclick=type="button" class="centered btn btn-primary btn-lg">
+                  <a href='google.com'>For Hosts</a>
+               </button>-->
+
+            <div id="bottom-image-wrapper" class="row bottom">
+                <FORM METHOD="LINK" ACTION="window.alert('text');">
+                  <INPUT TYPE="submit" VALUE="Upload a picture" class="centered btn btn-primary btn-lg">
+                </FORM>
+                <!--<img id="bottom-image" src="img/host_your_space.jpg">-->
+            </div>       
         </div>
         <p> This information will show up in your listing to people browsing for a space.</p> 
         <div class="footer">
-            <FORM METHOD="LINK" ACTION="host-photos.html">
+            <FORM METHOD="LINK" ACTION="host-location.html">
                 <INPUT TYPE="submit" VALUE="Next" style="font-size:20px" class="centered btn btn-primary btn-lg">
             </FORM>
         </div>
