@@ -304,3 +304,22 @@ a{
 .listing-edit-button{
     margin: 30px;
 }
+
+.amenities-form {
+    margin-left: 20%;
+    font-size: 20px;
+
+}
+
+.checkbox{
+    margin-bottom: 35px;
+}
+
+.add-amenity-item {
+    margin-left: -50px;
+    margin-right: 10%;
+}
+
+.add-amenities-button {
+    background-color: #FF0040;
+}
