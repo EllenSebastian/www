@@ -240,6 +240,11 @@ a{
 
 }
 
+.bignote{
+    font-size:50px;
+    text-align:center;
+}
+
 .note{
     font-size:25px;
     text-align:center;
@@ -252,6 +257,11 @@ a{
 
 .gray{
     color:#6E6E6E;
+}
+
+
+.pink{
+    color:#FF0040;
 }
 
 .confirm{
