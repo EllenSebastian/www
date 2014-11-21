@@ -177,3 +177,20 @@ wrapper {
 a{
     color:white;
 }
+
+
+.textinput{
+    margin-left: 10%;
+    margin-right: 10%; /* BUG: THIS MARGIN-RIGHT DOES NOT WORK */;
+    font-size: 20px;
+    border-color: #FF0040;
+    border-width: 3px;
+    padding:25px;
+    width: 80%;
+
+}
+
+.inputcontainer{
+
+
+}
