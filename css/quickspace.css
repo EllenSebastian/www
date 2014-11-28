@@ -125,6 +125,13 @@ h1 {
     font-size:18px;
 }
 
+.boxedForm{
+    width: 80%;
+    border: 3px solid #FF0040;
+    margin-left:10%;
+    margin-right:10%;
+    padding:4%;
+}
 
 .image { 
    position: relative; 

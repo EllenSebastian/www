@@ -10,34 +10,66 @@
         <title>QuickSpace</title>
     </head>
     <body>
-
-        <div id="normal-header" style="height:8%" class="normalheader">
-            <table style="width:100%"><tr>
-                <td class="headerIcon"><a href='guest-type.html'><img src='img/backIcon.png' ></a></td>
-                 <td class="headerText">Explore</td>
+        <div id="normal-header" class="normalheader">
+            <table style="width:100%" class="paddedTable"><tr>
+                <td class="headerIcon"><a href='explore-map.html'><img src='img/backIcon.png' ></a></td>
+                 <td class="headerText">Add filters</td>
                 <td class="headerIcon"><a href='index.html'><img src='img/homeIcon.png' ></a></td>
             </tr></table>        
         </div>
-        <div class="bigBody" style="top:8%">
-            <table style="width:100%"><tr>
-                <td class="center">
-                    <FORM METHOD="LINK" ACTION="guest-filters.html">
-                      <INPUT TYPE="submit" VALUE="Add filters" style="font-size:20px" class="centered btn btn-primary ">
+        <div class="bigbody">
+            <div class="boxedForm">
+                <form role="form" >
+                   <div class="checkbox">
+                      <label>
+                      <input type="checkbox"> Wi-Fi
+                      </label>
+                   </div>
+                    <div class="checkbox">
+                      <label>
+                      <input type="checkbox"> Refrigerator
+                      </label>
+                   </div>
+                    <div class="checkbox">
+                      <label>
+                      <input type="checkbox"> Study Desk
+                      </label>
+                   </div>
+                    <div class="checkbox">
+                      <label>
+                      <input type="checkbox"> Big Screen Monitor
+                      </label>
+                   </div>
+                    <div class="checkbox">
+                      <label>
+                      <input type="checkbox"> Janitorial Services
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        Min price: $<input type="textbox" placeholder="1">/hr
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        Max price: $<input type="textbox" placeholder="1000">/hr
+                      </label>
+                    </div>
+                </form>
+            </div>
+            <table style="margin-top:3%"><tr>
+                <td style="width:50%">
+                    <FORM METHOD="LINK" ACTION="explore-map.html">
+                        <INPUT TYPE="submit" VALUE="Cancel" style="font-size:20px" class=   "centered btn btn-primary btn-lg">
                     </FORM>
-                </td>
-                <td class="center">type search bar</td>
-                <td class="center">List view button</td>
-            </tr></table>
-            <input placeholder="Enter address or choose location" type="text" class="textinput form-control" id="inputSuccess3" aria-describedby="inputSuccess3Status">
-            <input placeholder="Additional location info (door codes, etc)" type="text" class="textinput form-control" id="inputSuccess3" aria-describedby="inputSuccess3Status">
-
-            <img id="bottom-image" src="img/map.png">
+                </td><td style="width:50%">
+                    <FORM METHOD="LINK" ACTION="explore-map.html">
+                        <INPUT TYPE="submit" VALUE="Search" style="font-size:20px" class=   "centered btn btn-primary btn-lg">
+                    </FORM>
+                </td><td>
+            </table>
         </div>
-        <p> This information will show up in your listing to people browsing for a space.</p> 
         <div class="footer">
-            <FORM METHOD="LINK" ACTION="host-photos.html">
-                <INPUT TYPE="submit" VALUE="Next" style="font-size:20px" class="centered btn btn-primary btn-lg">
-            </FORM>
         </div>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
