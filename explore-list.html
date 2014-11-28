@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+         <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+         <link rel="stylesheet" type="text/css" href="css/quickspace.css" />
+        <title>QuickSpace</title>
+    </head>
+    <body>
+
+        <div id="normal-header" style="height:8%" class="normalheader">
+            <table style="width:100%" class="paddedTable"><tr>
+                <td class="headerIcon"><a href='guest-type.html'><img src='img/backIcon.png' ></a></td>
+                 <td class="headerText">Explore</td>
+                <td class="headerIcon"><a href='index.html'><img src='img/homeIcon.png' ></a></td>
+            </tr></table>        
+        </div>
+        <div class="bigbody" style="top:8%">
+            <table style="width:100%;height:10%"><tr>
+                <td class="center">
+                    <FORM METHOD="LINK" ACTION="guest-filters.html">
+                      <INPUT TYPE="submit" VALUE="Add filters" style="font-size:18px" class="centered btn btn-primary ">
+                    </FORM>
+                </td>
+                <td class="center">
+                    <input placeholder="office space" type="text" style="padding:13px;height:5%;font-size:15px;margin-top:0px;margin-bottom:0px" class="textinput form-control smallTextbox" id="inputSuccess3" aria-describedby="inputSuccess3Status"></td>
+                <td class="center">
+                    <FORM METHOD="LINK" ACTION="guest-list.html">
+                      <INPUT TYPE="submit" VALUE="List view" style="font-size:18px" class="centered btn btn-primary ">
+                    </FORM>
+                </td>
+            </tr></table>
+            <div class="largeScrollable">
+                <a href="view-space.html">
+                    <img src="img/privateOfficeSpace.png"/>
+                </a>
+                <hr/>
+                <a href="view-space.html">
+                    <img src="img/studyRoom.png"/>
+                </a>
+            </div>
+        </div>
+        <div class="footer" style="height:8%">
+            <FORM METHOD="LINK" ACTION="host-photos.html">
+                <INPUT TYPE="submit" VALUE="Next" style="font-size:20px" class="centered btn btn-primary btn-lg">
+            </FORM>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+    </body>
+</html>
