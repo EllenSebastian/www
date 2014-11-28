@@ -12,40 +12,29 @@
     <body>
 
         <div id="normal-header" style="height:8%" class="normalheader">
-            <table style="width:100%" class="paddedTable"><tr>
+            <table style="width:100%"><tr>
                 <td class="headerIcon"><a href='guest-type.html'><img src='img/backIcon.png' ></a></td>
                  <td class="headerText">Explore</td>
                 <td class="headerIcon"><a href='index.html'><img src='img/homeIcon.png' ></a></td>
             </tr></table>        
         </div>
-        <div class="bigbody" style="top:8%">
-            <table style="width:100%;height:10%"><tr>
+        <div class="bigBody" style="top:8%">
+            <table style="width:100%"><tr>
                 <td class="center">
                     <FORM METHOD="LINK" ACTION="guest-filters.html">
-                      <INPUT TYPE="submit" VALUE="Add filters" style="font-size:18px" class="centered btn btn-primary ">
+                      <INPUT TYPE="submit" VALUE="Add filters" style="font-size:20px" class="centered btn btn-primary ">
                     </FORM>
                 </td>
-                <td class="center">
-                    <input placeholder="office space" type="text" style="height:5%;font-size:15px;padding:5px;margin-top:30px;" class="textinput form-control smallTextbox" id="inputSuccess3" aria-describedby="inputSuccess3Status"></td>
-                <td class="center">
-                    <FORM METHOD="LINK" ACTION="guest-list.html">
-                      <INPUT TYPE="submit" VALUE="List view" style="font-size:18px" class="centered btn btn-primary ">
-                    </FORM>
-                </td>
+                <td class="center">type search bar</td>
+                <td class="center">List view button</td>
             </tr></table>
+            <input placeholder="Enter address or choose location" type="text" class="textinput form-control" id="inputSuccess3" aria-describedby="inputSuccess3Status">
+            <input placeholder="Additional location info (door codes, etc)" type="text" class="textinput form-control" id="inputSuccess3" aria-describedby="inputSuccess3Status">
 
-
-            <div class="image" style="">
-
-                <img src="img/ovalMap1.png" style="width:100%;height:100%"alt="" />
-                <img class="mapParker" style="position:absolute;height:5%;left:10px;top:35px" src="img/circleA.png"/>
-                <img class="mapParker" style="position:absolute;height:5%;left:200px;top:200px" src="img/circleB.png"/>
-                <img class="mapParker" style="position:absolute;height:5%;left:100px;top:300px" src="img/circleC.png"/>
-
-            </div>
+            <img id="bottom-image" src="img/map.png">
         </div>
         <p> This information will show up in your listing to people browsing for a space.</p> 
-        <div class="footer" style="height:8%">
+        <div class="footer">
             <FORM METHOD="LINK" ACTION="host-photos.html">
                 <INPUT TYPE="submit" VALUE="Next" style="font-size:20px" class="centered btn btn-primary btn-lg">
             </FORM>

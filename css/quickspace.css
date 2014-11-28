@@ -121,6 +121,31 @@ h1 {
     font-size:15px;
 }
 
+.smallButton{
+    font-size:18px;
+}
+
+
+.image { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+}
+
+.mapMarker { 
+   position: absolute; 
+}
+
+
+.paddedTable{
+    padding-bottom:2%;
+}
+
+.smallTextbox{
+    height:5%;
+    padding:5px;
+    margin-top:30px
+}
+
 .inputbody{
     top:15%;
     position: absolute;
