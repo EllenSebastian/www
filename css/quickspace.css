@@ -347,6 +347,13 @@ a{
     overflow-y:scroll;    
 }
 
+.reviews{
+    text-align:center;
+    color:gray;
+    width:80%;
+    margin-left:10%;
+}
+
 .bordered-listing {
     font-size: 30px;
     text-align: center;
