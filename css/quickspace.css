@@ -149,6 +149,13 @@ h1 {
     padding:4%;
 }
 
+.simpleTextInput{
+    margin:2px;
+    border: 1px solid gray;
+    margin-bottom:0px;
+    font-size:18px;
+}
+
 .image { 
    position: relative; 
    width: 100%; /* for IE 6 */
@@ -333,10 +340,17 @@ a{
     color:#FF0040;
 }
 
-.confirm{
+.confirmLeft{
     font-size:18px;
     padding:10px;
-    width:40%;
+    width:30%;
+}
+
+
+.confirmRight{
+    font-size:18px;
+    padding:10px;
+    width:50%;
 }
 
 .confirmtable{
