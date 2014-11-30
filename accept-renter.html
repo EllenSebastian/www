@@ -1,0 +1,57 @@
+<!-- TODO
+- fix bug on your profile page
+- homepage notifications (http://stanford.edu/class/cs147/projects/crowd/quickspace/medium-fi/#12)
+http://stanford.edu/class/cs147/projects/crowd/quickspace/medium-fi/#20
+   - get homepage screenshot for android & make popup happen
+- data persistence for hosts
+- edit previous listings for hosts
+- improve "Your space is up for rent" page
+- make reservation confirmed page with cancel button
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+         <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+         <link rel="stylesheet" type="text/css" href="css/quickspace.css" />
+        <title>QuickSpace</title>
+    </head>
+    <body>
+        <div class="container-fluid">
+
+            <div id="top-header" class="row header" style="top:5%">
+                <p class="note gray">John Doe wants to rent your<p>
+                <p class="note gray" id="confirm-spacename">space!<p>
+            </div>
+
+            <div class="inputbody">
+                <div class="grayBox" style="top:50%;border:1px solid rgb(199,190,190);height:50%;width:80%;top:25%;margin-left:7.3%;margin-top:13%;border-radius:5px;text-align:center;font-size:15px">
+                    <img src="img/profilePicture.png" style="height:45%"/>
+                    <br/><br/>
+                    <p><b>Name:</b> John Doe</p>
+                    <p><b>Bio:</b> I am a project manager for a large company and I often need to make conference calls. See my linkedin: linkedin.com/pub/JohnDoe</p>
+                    <p><b>Time requested:</b> 2pm-4pm</p>
+                </div>
+
+                <div id="bottom-image-wrapper" class="row bottom">
+                    <FORM METHOD="LINK" ACTION="accept-confirm.html">
+                      <INPUT TYPE="submit" VALUE="Accept" style="font-size:30px;margin-bottom:5%" class="centered btn btn-primary">
+                    </FORM>
+                    <FORM METHOD="LINK" ACTION="reject-confirm.html">
+                      <INPUT TYPE="submit" VALUE="Reject" style="font-size:30px" class="centered btn btn-primary">
+                    </FORM>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+
+    </body>
+</html>
