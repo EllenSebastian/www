@@ -21,25 +21,14 @@ http://stanford.edu/class/cs147/projects/crowd/quickspace/medium-fi/#20
     </head>
     <body>
         <div class="container-fluid">
-            <div class="background"/>
-
-            <div id="top-header" class="row header" style="top:5%">
-                <p class="welcome">Welcome to QuickSpace!<p>
+            <div class="row top">
+                <img class="homepage-image" src="img/find_a_space.jpg" />
+                <img class="homepage-icon" src="img/icon-profile.png" onClick="self.location='profile.html'" />
+                <button type="button" class="btn btn-primary btn-lg outline top-homepage-button" onClick="self.location='discover.html'">Find A Space</button>
             </div>
-            <div id="top-image-wrapper" class="row top">
-                <FORM METHOD="LINK" ACTION="profile.html">
-                  <INPUT TYPE="submit" VALUE="Your profile" class="centered btn btn-primary btn-lg">
-                </FORM>
-            </div>
-            <div id="middle-image-wrapper" class="row middle">
-                <FORM METHOD="LINK" ACTION="discover.html">
-                  <INPUT TYPE="submit" VALUE="Find a space" class="centered btn btn-primary btn-lg">
-                </FORM>
-            </div>
-            <div id="bottom-image-wrapper" class="row bottom">
-                <FORM METHOD="LINK" ACTION="host-name.html">
-                  <INPUT TYPE="submit" VALUE="List your space" class="centered btn btn-primary btn-lg">
-                </FORM>
+            <div  class="row bottom">
+                 <img class="homepage-image" src="img/host_your_space.jpg"/>
+                 <button type="button" class="btn btn-primary btn-lg outline bottom-homepage-button" onClick="self.location='host-name.html'">List Your Space</button>
             </div>
         </div>
         <script type="text/javascript" src="cordova.js"></script>

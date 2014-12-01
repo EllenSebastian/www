@@ -197,28 +197,7 @@ h1 {
     width:100%;
     background-color:#FF0040;
 }
-.top {
-    position: absolute;
-    height: 22%;
-    width: 100%;
-    background-color:white;
-    top:31%;
-}
-.middle {
-    position: absolute;
-    height: 22%;
-    width: 100%;
-    background-color:white;
-    top:53%;
-}
 
-.bottom {
-    background-color: white;
-    position: absolute;
-    height: 25%;
-    width: 100%;
-    top: 75%;
-}
 
 /*img {
     width: 100%;
@@ -412,4 +391,91 @@ a{
 
 .add-amenities-button {
     background-color: #FF0040;
+}
+
+/* css specific to index.html */
+.top {
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    background-color: red;
+    border: 3px solid white;
+}
+
+.bottom {
+    background-color: blue;
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    top: 50%;
+    border: 3px solid white;
+}
+
+.homepage-image {
+    height: 100%;
+    width: 100%;
+}
+
+.top-homepage-button {
+    position: absolute;
+    z-index: 1;
+    top: 43%;
+    left: 25%;
+}
+
+.bottom-homepage-button {
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+    left: 20%;
+}
+
+/***********************
+  OUTLINE BUTTONS
+************************/
+
+.btn.outline {
+    background-color: rgba(255,0,0,0.3);
+    padding: 12px 22px;
+}
+.btn-primary.outline {
+    border: 4px solid #FF0040;
+    color: white;
+}
+.btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
+    color: #FF0040;
+    border-color: #FF0040;
+}
+.btn-primary.outline:active, .btn-primary.outline.active {
+    border-color: #007299;
+    color: #007299;
+    box-shadow: none;
+}
+
+/***********************
+  CUSTON BTN VALUES
+************************/
+
+.btn {
+    font-size: 25px;
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+/***********************
+  NORMAL INDEX.HTML CSS
+************************/
+
+.homepage-icon {
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    z-index: 1;
+    top: 5%;
+    left: 85%;
 }
