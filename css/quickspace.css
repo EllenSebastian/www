@@ -124,6 +124,8 @@ h1 {
     background-color:white;
     width: 100%;
     font-size:15px;
+    left:0;
+    top:1%;
 }
 
 .smallButton{
@@ -228,7 +230,7 @@ wrapper {
     color: #FF0040;
     font-size:35px;
     text-align:center;
-    width:80%;
+    width:70%;
 }
 
 td.center{
@@ -242,7 +244,7 @@ td.center{
 
 .headerIcon{
     text-align: center;
-    width:10%;
+    width:15%;
 }
 .welcome{
     color: #FF0040;
