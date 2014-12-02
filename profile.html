@@ -18,29 +18,27 @@
             </tr></table>        
         </div>
         <div class="background"/>
-        <div class="inputbody" style="left:10%">
+        <div class="inputbody" style="left:10%;top:8%">
             <table style="width:80%;left:10%;height:40%">
                 <tr>
                     <td style="width:50%;margin:0">
-                        <input style="height:50%;font-size:15px"placeholder="Your bio/BUG: not tall enough" type="text" height="200px" class="textinput bigtextinput form-control" id="inputSuccess3" aria-describedby="inputSuccess3Status">
+                        <input style="height:100%;font-size:15px;width:100%;margin:0"placeholder="Your bio/BUG: not tall enough" type="textarea" height="200px" class="textinput bigtextinput form-control" id="inputSuccess3" aria-describedby="inputSuccess3Status">
                     </td>
                     <td style="width:30%">
-                        <img style="align:center" src="img/profilePicture.png"/>
+                        <img style="align:center;height:80%;top:0%;position:relative" src="img/profilePicture.png"/>
                         <FORM METHOD="LINK" ACTION="guest-filters.html">
-                      <INPUT TYPE="submit" VALUE="Upload profile picture" style="font-size:15px" class="centered btn btn-primary ">
                     </FORM>
                     </td>
                 </tr>
             </table>
+            <INPUT TYPE="submit" VALUE="Upload profile picture" style="font-size:15px" class="centered btn btn-primary ">
         </div>
-            <div id="middle-image-wrapper" class="row middle">
-                <FORM METHOD="LINK" ACTION="host-listing.html">
-                  <INPUT TYPE="submit" VALUE="Your listings" class="centered btn btn-primary btn-lg">
-                </FORM>
-            </div>
-            <div id="bottom-image-wrapper" class="row bottom">
+            <div id="bottom-image-wrapper" class="bottom">
                 <FORM METHOD="LINK" ACTION="your-rentals.html">
-                  <INPUT TYPE="submit" VALUE="Previous rentals" class="centered btn btn-primary btn-lg">
+                  <INPUT TYPE="submit" VALUE="Previous rentals" class="centered btn btn-primary btn-lg" style="margin-bottom:20%;margin-top:20%">
+                </FORM>
+                <FORM METHOD="LINK" ACTION="host-listing.html">
+                  <INPUT TYPE="submit" VALUE="Your spaces" class="centered btn btn-primary btn-lg">
                 </FORM>
             </div>
 
