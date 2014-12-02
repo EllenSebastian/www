@@ -435,7 +435,7 @@ a{
 ************************/
 
 .btn.outline {
-    background-color: rgba(255,0,0,0.3);
+    background-color: rgba(0,0,0,0.5);;
     padding: 12px 22px;
 }
 .btn-primary.outline {
