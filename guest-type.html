@@ -5,8 +5,13 @@
         <meta name="format-detection" content="telephone=no" />
         <meta name="msapplication-tap-highlight" content="no" />
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-         <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+                 <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+        <link href="css/bootstrap.icon-large.min.css" rel="stylesheet">
          <link rel="stylesheet" type="text/css" href="css/quickspace.css" />
+         <link rel="stylesheet" type="text/css" href="css/guest-type.css" />
         <title>QuickSpace</title>
     </head>
     <body>
@@ -19,23 +24,26 @@
             </tr></table>        
         </div>
         <div class="inputbody">
-            <p class="note pink"> Space Type </p>
-            <input style="margin-bottom:1%" placeholder="e.g. Office Space" type="text" class="textinput form-control" id="inputSuccess3" aria-describedby="inputSuccess3Status">
-            <p class="note pink"> Rental Date </p>
-            <input style="margin-bottom:1%" placeholder="12/10/2015" type="text" height="5%" class="textinput form-control" id="inputSuccess3" aria-describedby="inputSuccess3Status">
-
-            <p class="note pink"> Rental start time </p>
-            <input style="margin-bottom:1%" placeholder="e.g. 3:00PM" type="text" height="5%" class="textinput form-control" id="inputSuccess3" aria-describedby="inputSuccess3Status">
-            <p class="note pink"> Rental end time </p>
-
-            <input style="margin-bottom:1%" placeholder="e.g. 4:00PM" type="text" height="5%" class="textinput form-control" id="inputSuccess3" aria-describedby="inputSuccess3Status">
-
+            <div class="inner-addon right-addon input-item-wrapper">
+                <p class="note pink"> Space Type </p>
+                <i class="glyphicon glyphicon-search"></i>
+                <input style="margin-bottom:1%" placeholder="e.g. Office Space" type="text" class="textinput form-control" id="inputSuccess3" aria-describedby="inputSuccess3Status">
+            </div>
+            <div class="inner-addon right-addon input-item-wrapper"> 
+                <p class="note pink"> Rental Date </p>
+                <i class="glyphicon glyphicon-calendar"> </i>
+                <input style="margin-bottom:1%" placeholder="12/10/2015" type="text" height="5%" class="textinput form-control" id="inputSuccess3" aria-describedby="inputSuccess3Status">
+            </div>
+            <div class="inner-addon right-addon input-item-wrapper"> 
+                <p class="note pink"> Rental start time </p>
+                <input style="margin-bottom:1%" placeholder="e.g. 3:00PM" type="text" height="5%" class="textinput form-control" id="inputSuccess3" aria-describedby="inputSuccess3Status">
+            </div>
+            <div class="input-item-wrapper"> 
+                <p class="note pink"> Rental end time </p>
+                <input style="margin-bottom:1%" placeholder="e.g. 4:00PM" type="text" height="5%" class="textinput form-control" id="inputSuccess3" aria-describedby="inputSuccess3Status">
+            </div>
         </div>
-        <div class="footer">
-            <FORM METHOD="LINK" ACTION="explore-map.html">
-                <INPUT TYPE="submit" VALUE="Search" style="font-size:20px" class="centered btn btn-primary btn-lg">
-            </FORM>
-        </div>
+         <button type="button" class="btn btn-primary gradient footer" style="font-size:24px" onClick="self.location='explore-map.html'">Search</button>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
         <script type="text/javascript">

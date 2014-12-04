@@ -182,11 +182,6 @@ h1 {
     background-color:white;
 }
 
-.halfimg{
-    height:43%;
-    width:100%;
-    text-align:center;
-}
 .icon{
     background: url(img/searchIcon.png) ;
     background-position: 7px 7px;
@@ -199,7 +194,6 @@ h1 {
     width:100%;
     background-color:#FF0040;
 }
-
 
 /*img {
     width: 100%;
@@ -257,7 +251,8 @@ td.center{
     font-size:60px;
     text-align:center;
 }
-a{
+
+a { 
     color:white;
 }
 

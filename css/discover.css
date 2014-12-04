@@ -1,0 +1,93 @@
+/* enable absolute positioning */
+.inner-addon {
+  position: relative;
+}
+
+/* style glyph */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+/* align glyph */
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
+.discover-search-wrapper {
+	top: -10px;
+}
+
+.discover-search-wrapper .discover-search {
+	border: solid;
+	border-color: #FF0040;
+    border-width: 2px;
+}
+
+.half-image{
+    height:45%;
+    width:100%;
+    text-align:center;
+}
+
+/***********************
+  GRADIENT BUTTONS
+************************/
+.btn-primary.gradient {
+	background: -moz-linear-gradient(top,  #ff80a0 50%, #ff0040 50%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,#ff80a0), color-stop(50%,#ff0040)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ff80a0 50%,#ff0040 50%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ff80a0 50%,#ff0040 50%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ff80a0 50%,#ff0040 50%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ff80a0 50%,#ff0040 50%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff80a0', endColorstr='#ff0040',GradientType=0 ); /* IE6-9 */
+}
+.btn-primary.gradient:hover, .btn-primary.gradient:focus, .btn-primary.gradient:active, .btn-primary.gradient.active, .open > .dropdown-toggle.btn-primary {
+	background: -moz-linear-gradient(top,  #ffbfd0 50%, #ff80a0 50%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,#ffbfd0), color-stop(50%,#ff80a0)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffbfd0 50%,#ff80a0 50%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffbfd0 50%,#ff80a0 50%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffbfd0 50%,#ff80a0 50%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffbfd0 50%,#ff80a0 50%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffbfd0', endColorstr='#ff80a0',GradientType=0 ); /* IE6-9 */
+}
+.btn-primary.gradient:active, .btn-primary.gradient.active {
+	background: -moz-linear-gradient(top,  #ffdfe8 50%, #ffeff3 50%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,#ffdfe8), color-stop(50%,#ffeff3)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffdfe8 50%,#ffeff3 50%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffdfe8 50%,#ffeff3 50%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffdfe8 50%,#ffeff3 50%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffdfe8 50%,#ffeff3 50%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffdfe8', endColorstr='#ffeff3',GradientType=0 ); /* IE6-9 */
+}
+
+/***********************
+  CUSTON BTN VALUES
+************************/
+
+.btn {
+	padding: 14px 30px;
+	border: 0 none;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus {
+	outline: 0 none;
+}
+
+.btn-primary {
+	background: #FF0040;
+	color: #ffffff;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+	background: #ff80a0;
+}
+.btn-primary:active, .btn-primary.active {
+	background: #ffeff3;
+	box-shadow: none;
+}
