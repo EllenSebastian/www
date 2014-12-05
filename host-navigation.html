@@ -1,13 +1,3 @@
-<!-- TODO
-- fix bug on your profile page
-- homepage notifications (http://stanford.edu/class/cs147/projects/crowd/quickspace/medium-fi/#12)
-http://stanford.edu/class/cs147/projects/crowd/quickspace/medium-fi/#20
-   - get homepage screenshot for android & make popup happen
-- data persistence for hosts
-- edit previous listings for hosts
-- improve "Your space is up for rent" page
-- make reservation confirmed page with cancel button
--->
 <!DOCTYPE html>
 <html>
     <head>
@@ -20,21 +10,32 @@ http://stanford.edu/class/cs147/projects/crowd/quickspace/medium-fi/#20
         <title>QuickSpace</title>
     </head>
     <body>
-        <div class="container-fluid">
+        <div class="container-fluid" style="padding:0">
 
-            <div id="normal-header" class="normalheader">
+            <div id="normal-header" class="normalheader" style="top:0;height:5%">
                <table style="width:100%"><tr>
                     <td class="headerIcon"><a href='accept-renter.html'><img class='iconImg' src='img/backIcon.png' ></a></td>
                     <td class="headerText">Rental Request</td>
                     <td class="headerIcon"><a href='index.html'><img class='iconImg' src='img/homeIcon.png' ></a></td>
                 </tr></table>        
-            </div>
-
-
-            <div id="top-header" class="row header" style="top:12%;height:5%">
                 <p class="note gray" id="host-ETA">John is on his way. ETA: 10 minutes<p>
+
             </div>
-            <img src="img/hostNavigation.png"/>
+            <div style="top:12%;position:absolute;height:25%;width:100%">
+                <p id="chat" class="chat" style="height:80%"><b>Host:</b>  Ring the doorbell when you're here!</p>
+                <div id="chat-entry" class="chat-entry" style="top:80%;height:16%">
+                    <table><tr><td style="width:90%">
+                        <input type="text" id="guest-chat-input" style="border:0px;width:100%"/>
+                    </td>
+                    <td style="width:10%">
+                        <button type="button" class="btn btn-primary gradient" style="height: 130%;width:90%;padding: 5px;font-size: 10px;" onClick="self. location='host-location.html'"><img src="img/send12.png" style="width:80%;height:20%"/></button>
+                    </td><tr>
+                    </table>
+                </div>  
+            </div>
+            <div style="top:36%;height:64%;width:100%;position:absolute">
+                <img src="img/host-navigation.png" style="height:100%;width:100%">
+            </div>
         </div>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
