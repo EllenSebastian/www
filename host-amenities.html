@@ -6,12 +6,13 @@
         <meta name="msapplication-tap-highlight" content="no" />
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
          <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="css/host-amenities.css" />
          <link rel="stylesheet" type="text/css" href="css/quickspace.css" />
+         <link href="css/bootstrap-switch.css" rel="stylesheet">
+         <script src="js/bootstrap-switch.js"></script>
         <title>QuickSpace</title>
     </head>
-    <body>
-
-        
+    <body>      
         <div id="normal-header" class="normalheader">
             <table style="width:100%"><tr>
                 <td class="headerIcon"><a href='host-photos.html'><img class='iconImg' src='img/backIcon.png' ></a></td>
@@ -22,36 +23,76 @@
         <div class="inputbody">
             <p class="note"> What amenities do you have? </p>
             <form role="form" class="amenities-form ">
-               <div class="checkbox">
-                  <label>
-                  <input type="checkbox"> Wi-Fi
-                  </label>
-               </div>
-                <div class="checkbox">
-                  <label>
-                  <input type="checkbox"> Refrigerator
-                  </label>
-               </div>
-                <div class="checkbox">
-                  <label>
-                  <input type="checkbox"> Study Desk
-                  </label>
-               </div>
-                <div class="checkbox">
-                  <label>
-                  <input type="checkbox"> Big Screen Monitor
-                  </label>
-               </div>
-                <div class="checkbox">
-                  <label>
-                  <input type="checkbox"> Janitorial Services
-                  </label>
-               </div>
+              <div class="checkbox">
+                  <table>
+                    <tr>
+                      <td>
+                        <div class="btn-group btn-toggle"> 
+                          <button class="btn btn-sm btn-default" style="font-size: 14px;padding: 10px 15px;letter-spacing: 0px;">Yes</button>
+                          <button class="btn btn-sm btn-primary active " style="font-size: 14px; padding: 10px 12px;">No</button>
+                        </div>
+                    </td>
+                    <td class="toggle-button-label"><p>Wi-Fi</p></td>
+                    </tr>
+                  </table>
+              </div>
+              <div class="checkbox">
+                  <table>
+                    <tr>
+                      <td>
+                        <div class="btn-group btn-toggle"> 
+                          <button class="btn btn-sm btn-default" style="font-size: 14px;padding: 10px 15px;letter-spacing: 0px;">Yes</button>
+                          <button class="btn btn-sm btn-primary active " style="font-size: 14px; padding: 10px 12px;">No</button>
+                        </div>
+                    </td>
+                    <td class="toggle-button-label"><p>Refrigerator</p></td>
+                    </tr>
+                  </table>
+              </div>
+              <div class="checkbox">
+                  <table>
+                    <tr>
+                      <td>
+                        <div class="btn-group btn-toggle"> 
+                          <button class="btn btn-sm btn-default" style="font-size: 14px;padding: 10px 15px;letter-spacing: 0px;">Yes</button>
+                          <button class="btn btn-sm btn-primary active " style="font-size: 14px; padding: 10px 12px;">No</button>
+                        </div>
+                    </td>
+                    <td class="toggle-button-label"><p>Study Desk</p></td>
+                    </tr>
+                  </table>
+              </div>
+              <div class="checkbox">
+                  <table>
+                    <tr>
+                      <td>
+                        <div class="btn-group btn-toggle"> 
+                          <button class="btn btn-sm btn-default" style="font-size: 14px;padding: 10px 15px;letter-spacing: 0px;">Yes</button>
+                          <button class="btn btn-sm btn-primary active " style="font-size: 14px; padding: 10px 12px;">No</button>
+                        </div>
+                    </td>
+                    <td class="toggle-button-label"><p>Big Screen Monitor</p></td>
+                    </tr>
+                  </table>
+              </div>
+              <div class="checkbox">
+                  <table>
+                    <tr>
+                      <td>
+                        <div class="btn-group btn-toggle"> 
+                          <button class="btn btn-sm btn-default" style="font-size: 14px;padding: 10px 15px;letter-spacing: 0px;">Yes</button>
+                          <button class="btn btn-sm btn-primary active " style="font-size: 14px; padding: 10px 12px;">No</button>
+                        </div>
+                    </td>
+                    <td class="toggle-button-label"><p>Janitorial Services</p></td>
+                    </tr>
+                  </table>
+              </div>
                <div class="input-group add-amenity-item">
-                    <input type="text" class="form-control">
-                        <span class="input-group-btn">
-                            <button class="btn btn-default" type="button ">Add Amenity</button>
-                        </span>
+                    <input type="text" class="form-control add-amenities-text-input" style="height: 41px;">
+                    <span class="input-group-btn">
+                        <button class="btn btn-sm btn-default" style="font-size: 14px;padding: 10px 15px;letter-spacing: 0px;background-color:#FF0040;color:white;">Add Amenity</button>
+                    </span>
                 </div><!-- /input-group -->
             </form>
         </div>
@@ -63,5 +104,19 @@
             app.initialize();
         </script>
         <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript">
+            $('.btn-toggle').click(function() {
+              $(this).find('.btn').toggleClass('active');  
+    
+              if ($(this).find('.btn-primary').size()>0) {
+                $(this).find('.btn').toggleClass('btn-primary');
+              }
+            });
+
+            $('form').submit(function(){
+              return false;
+            });
+
+        </script>
     </body>
 </html>

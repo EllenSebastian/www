@@ -1,0 +1,12 @@
+.toggle-button-label {
+	padding-left: 20px;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary.focus,
+ .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+ 	background-color: #FF0040
+ }
+
+ .add-amenities-text-input {
+ 	
+ }
