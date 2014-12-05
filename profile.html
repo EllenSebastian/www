@@ -17,30 +17,25 @@
                 <td class="headerIcon"><a href='index.html'><img class='iconImg' src='img/homeIcon.png' ></a></td>
             </tr></table>        
         </div>
-        <div class="background"/>
-        <div class="inputbody" style="left:10%;top:8%">
-            <table style="width:80%;left:10%;height:40%">
-                <tr>
-                    <td style="width:50%;margin:0">
-                        <input style="height:100%;font-size:15px;width:100%;margin:0"placeholder="Your bio/BUG: not tall enough" type="textarea" height="200px" class="textinput bigtextinput form-control" id="inputSuccess3" aria-describedby="inputSuccess3Status">
-                    </td>
-                    <td style="width:30%">
-                        <img style="align:center;height:80%;top:0%;position:relative" src="img/profilePicture.png"/>
-                        <FORM METHOD="LINK" ACTION="guest-filters.html">
-                    </FORM>
-                    </td>
-                </tr>
-            </table>
-            <INPUT TYPE="submit" VALUE="Upload profile picture" style="font-size:15px" class="gradient centered btn btn-primary ">
-        </div>
-            <div id="bottom-image-wrapper" class="bottom">
+        <div class="inputbody" style="left:0%;text-align:center;top:8%">
+            <img class="img-circle" style="margin:8%;align:center;height:30%;top:0%;position:relative;border:1px solid black;" src="img/profilePicture.png"/>
+            <p class="gray note">John Doe - 29 - Product Manager</p>
+            <p class="gray note" style="font-size:18px;margin:8%"> I am a project manager for a large company and I often need to make conference calls. See my linkedIn: linkedin.com/pub/JohnDoe</p>
                 <FORM METHOD="LINK" ACTION="your-rentals.html">
-                  <INPUT TYPE="submit" VALUE="Previous rentals" class="centered gradient btn btn-primary btn-lg" style="margin-bottom:20%;margin-top:20%">
+                  <INPUT TYPE="submit" VALUE="Previous rentals" class="centered gradient btn btn-primary btn-lg" style="margin-bottom:7%;margin-top:7%;font-size:18px;padding:7px">
+                </FORM>
+                <FORM METHOD="LINK" ACTION="recent-searches.html">
+                  <INPUT TYPE="submit" VALUE="Recent Searches" class="centered gradient btn btn-primary btn-lg" style="margin-bottom:7%;margin-top:7%;font-size:18px;padding:7px">
                 </FORM>
                 <FORM METHOD="LINK" ACTION="host-listing.html">
-                  <INPUT TYPE="submit" VALUE="Your spaces" class="centered gradient btn btn-primary btn-lg">
+                  <INPUT TYPE="submit" VALUE="Your spaces" style="font-size:18px;padding:7px" class="centered gradient btn btn-primary btn-lg">
                 </FORM>
             </div>
+        <button type="button" class="btn btn-primary gradient footer" style="font-size:24px" onClick="">Edit profile</button>
+
+
+        </div>
+    </div>
 
 
         <script type="text/javascript" src="cordova.js"></script>
