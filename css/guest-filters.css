@@ -1,0 +1,18 @@
+.toggle-button-label {
+	padding-left: 20px;
+	font-size: 20px;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary.focus,
+ .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+ 	background-color: #FF0040
+ }
+
+ #ex1Slider .slider-selection {
+	background: #BABABA;
+}
+
+.price-range-slider {
+	font-size: 18px;
+}
+

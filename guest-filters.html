@@ -7,6 +7,8 @@
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
          <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
          <link rel="stylesheet" type="text/css" href="css/quickspace.css" />
+         <link rel="stylesheet" type="text/css" href="css/guest-filters.css">
+         <link rel="stylesheet" type="text/css" href="css/slider.css">
         <title>QuickSpace</title>
     </head>
     <body>
@@ -19,43 +21,76 @@
         </div>
         <div class="bigbody">
             <div class="boxedForm">
-                <form role="form" >
-                   <div class="checkbox">
-                      <label>
-                      <input type="checkbox"> Wi-Fi
-                      </label>
-                   </div>
-                    <div class="checkbox">
-                      <label>
-                      <input type="checkbox"> Refrigerator
-                      </label>
-                   </div>
-                    <div class="checkbox">
-                      <label>
-                      <input type="checkbox"> Study Desk
-                      </label>
-                   </div>
-                    <div class="checkbox">
-                      <label>
-                      <input type="checkbox"> Big Screen Monitor
-                      </label>
-                   </div>
-                    <div class="checkbox">
-                      <label>
-                      <input type="checkbox"> Janitorial Services
-                      </label>
+              <form role="form" >
+              <div class="checkbox">
+                  <table>
+                    <tr>
+                      <td>
+                        <div class="btn-group btn-toggle"> 
+                          <button class="btn btn-sm btn-default" style="font-size: 14px;padding: 10px 15px;letter-spacing: 0px;">Yes</button>
+                          <button class="btn btn-sm btn-primary active " style="font-size: 14px; padding: 10px 12px;">No</button>
+                        </div>
+                    </td>
+                    <td class="toggle-button-label"><p>Wi-Fi</p></td>
+                    </tr>
+                  </table>
+              </div>
+              <div class="checkbox">
+                  <table>
+                    <tr>
+                      <td>
+                        <div class="btn-group btn-toggle"> 
+                          <button class="btn btn-sm btn-default" style="font-size: 14px;padding: 10px 15px;letter-spacing: 0px;">Yes</button>
+                          <button class="btn btn-sm btn-primary active " style="font-size: 14px; padding: 10px 12px;">No</button>
+                        </div>
+                    </td>
+                    <td class="toggle-button-label"><p>Refrigerator</p></td>
+                    </tr>
+                  </table>
+              </div>
+              <div class="checkbox">
+                  <table>
+                    <tr>
+                      <td>
+                        <div class="btn-group btn-toggle"> 
+                          <button class="btn btn-sm btn-default" style="font-size: 14px;padding: 10px 15px;letter-spacing: 0px;">Yes</button>
+                          <button class="btn btn-sm btn-primary active " style="font-size: 14px; padding: 10px 12px;">No</button>
+                        </div>
+                    </td>
+                    <td class="toggle-button-label"><p>Study Desk</p></td>
+                    </tr>
+                  </table>
+              </div>
+              <div class="checkbox">
+                  <table>
+                    <tr>
+                      <td>
+                        <div class="btn-group btn-toggle"> 
+                          <button class="btn btn-sm btn-default" style="font-size: 14px;padding: 10px 15px;letter-spacing: 0px;">Yes</button>
+                          <button class="btn btn-sm btn-primary active " style="font-size: 14px; padding: 10px 12px;">No</button>
+                        </div>
+                    </td>
+                    <td class="toggle-button-label"><p>Big Screen Monitor</p></td>
+                    </tr>
+                  </table>
+              </div>
+              <div class="checkbox">
+                  <table>
+                    <tr>
+                      <td>
+                        <div class="btn-group btn-toggle"> 
+                          <button class="btn btn-sm btn-default" style="font-size: 14px;padding: 10px 15px;letter-spacing: 0px;">Yes</button>
+                          <button class="btn btn-sm btn-primary active " style="font-size: 14px; padding: 10px 12px;">No</button>
+                        </div>
+                    </td>
+                    <td class="toggle-button-label"><p>Janitorial Services</p></td>
+                    </tr>
+                  </table>
+              </div>
+                    <div class="checkbox price-range-slider">
+                      Price: <b>$ 1</b> <input id="ex2" type="text" class="span2" value="" data-slider-min="1" data-slider-max="500" data-slider-step="5" data-slider-value="[250,450]"/> <b>$ 500</b> 
                     </div>
-                    <div class="checkbox">
-                      <label>
-                        Min price: $<input type="textbox" placeholder="1">/hr
-                      </label>
-                    </div>
-                    <div class="checkbox">
-                      <label>
-                        Max price: $<input type="textbox" placeholder="1000">/hr
-                      </label>
-                    </div>
-                </form>
+            </form>
             </div>
             <table style="margin-top:3%"><tr>
                 <td style="width:50%">
@@ -73,9 +108,15 @@
         </div>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap-slider.js"></script>
         <script type="text/javascript">
             app.initialize();
         </script>
         <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript">
+        // With JQuery
+         // With JQuery
+          $("#ex2").slider({});
+        </script>
     </body>
 </html>
