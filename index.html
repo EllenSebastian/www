@@ -1,20 +1,14 @@
 <!-- TODO
-- homepage notifications (http://stanford.edu/class/cs147/projects/crowd/quickspace/medium-fi/#12)
-http://stanford.edu/class/cs147/projects/crowd/quickspace/medium-fi/#20
-   - get homepage screenshot for android & make popup happen
 - data persistence for hosts
-- in-app communication
 - hidden buttons that lead to host notification and guest notification
 - drop down menu of previous searches on Discover page (javascript)
 - list of previously viewed spaces
 - improve explore css (change the buttons to have filter icon and list icon, leaving more room for search bar)
 - rental slider for hosts (take it off and on the market)
 - turn picture into text for explore
-- make class for bottom buttons
 - fix list your space page 
 - turn all checkboxes into sliders (host-amenities and filters)
 - fix amenities page button
-- covnersation between host and guest 
 - resdesign/add more info to profile pagee 
 -->
 <!DOCTYPE html>
@@ -39,6 +33,9 @@ http://stanford.edu/class/cs147/projects/crowd/quickspace/medium-fi/#20
                  <img class="homepage-image" src="img/host_your_space.jpg"/>
                  <button type="button" class="btn btn-primary btn-lg outline bottom-homepage-button" onClick="self.location='host-name.html'">List Your Space</button>
             </div>
+            <a href="guest-notification.html" style="top: 96%;left: 45%;position: absolute;color: black;width: 10%;height: 4%;">.</a>
+            <a href="host-notification.html" style="top: 86%;left: 60%;position: absolute;color: black;width: 10%;height: 4%;">.</a>
+
         </div>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
