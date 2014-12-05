@@ -428,6 +428,50 @@ a {
     background-color: #FF0040;
 }
 
+.fullimg{
+    height:100%;
+    width:100%;
+}
+
+.imageBackground{
+    position:relative;
+    width:100%;
+}
+
+.overImg{
+    position:absolute;
+}
+
+.accept-link {
+    position: absolute;
+    z-index: 1;
+    top: 48%;
+    height: 10%;
+    width: 40%;
+    left: 15%;
+    border: 1px solid white;
+}
+
+.reject-link {
+    position: absolute;
+    z-index: 1;
+    top: 48%;
+    height: 10%;
+    width: 40%;
+    left: 59%;
+    border: 1px solid white;
+}
+
+.click-notification{
+    position: absolute;
+    z-index: 1;
+    top: 35%;
+    height: 12%;
+    width: 100%;
+    left: 0;
+    border: 1px solid white;
+}
+
 /* css specific to index.html */
 .top {
     position: absolute;
