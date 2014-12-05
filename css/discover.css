@@ -29,7 +29,8 @@
 }
 
 .half-image{
-    height:46%;
+    height:48%;
+    position:absolute;
     width:100%;
     text-align:center;
 }
