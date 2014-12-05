@@ -474,17 +474,6 @@ a {
     font-size:16px;
 }
 
-button{
-    margin: 0px;
-    padding: 0px;
-    font-family:Lucida Sans MS, Tahoma;
-    font-size: 12px;
-    color: #000; 
-    white-space:nowrap;
-    width:auto;
-    overflow:visible;
-    height:28px;
-}
 
 .sendButton{
     height: 130%;width:90%;padding: 5px;font-size: 10px;
