@@ -20,7 +20,7 @@
             </tr></table>        
         </div>
         <div class="bigbody">
-            <div class="boxedForm">
+            <div class="boxedForm" style="width: 94%;border: 3px solid #FF0040;margin-left: 3%;margin-right: 3%;padding: 4%;">
               <form role="form" >
               <div class="checkbox">
                   <table>
@@ -95,16 +95,15 @@
             <table style="margin-top:3%"><tr>
                 <td style="width:50%">
                     <FORM METHOD="LINK" ACTION="explore-map.html">
-                        <INPUT TYPE="submit" VALUE="Cancel" style="font-size:20px" class=   "centered btn btn-primary btn-lg">
+                        <INPUT TYPE="submit" VALUE="Cancel" style="font-size:20px" class=   "centered btn btn-primary btn-lg gradient">
                     </FORM>
                 </td><td style="width:50%">
                     <FORM METHOD="LINK" ACTION="explore-map.html">
-                        <INPUT TYPE="submit" VALUE="Search" style="font-size:20px" class=   "centered btn btn-primary btn-lg">
+                        <INPUT TYPE="submit" VALUE="Search" style="font-size:20px" class=   "centered btn btn-primary btn-lg gradient">
                     </FORM>
                 </td><td>
             </table>
         </div>
-        <div class="footer">
         </div>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
@@ -117,6 +116,21 @@
         // With JQuery
          // With JQuery
           $("#ex2").slider({});
+        </script>
+              <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript">
+            $('.btn-toggle').click(function() {
+              $(this).find('.btn').toggleClass('active');  
+    
+              if ($(this).find('.btn-primary').size()>0) {
+                $(this).find('.btn').toggleClass('btn-primary');
+              }
+            });
+
+            $('form').submit(function(){
+              return false;
+            });
+
         </script>
     </body>
 </html>
