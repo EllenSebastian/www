@@ -244,6 +244,7 @@ h1 {
     top:93%;
     height:7%;
     width:100%;
+    padding-top:2px !important;
     background-color:#FF0040;
 }
 
@@ -469,7 +470,6 @@ a {
     height: 10%;
     width: 40%;
     left: 15%;
-        border: 1px solid black;
 
 }
 .contact{
@@ -522,7 +522,6 @@ a {
     height: 10%;
     width: 40%;
     left: 59%;
-    border: 1px solid black;
 }
 
 .click-notification{
@@ -532,7 +531,6 @@ a {
     height: 12%;
     width: 100%;
     left: 0;
-        border: 1px solid black;
 
 }
 
@@ -562,14 +560,14 @@ a {
     position: absolute;
     z-index: 1;
     top: 43%;
-    left: 25%;
+    left: 22%;
 }
 
 .bottom-homepage-button {
     position: absolute;
     z-index: 1;
     top: 40%;
-    left: 20%;
+    left: 17%;
 }
 
 /***********************

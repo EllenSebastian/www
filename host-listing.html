@@ -7,6 +7,10 @@
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
          <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
          <link rel="stylesheet" type="text/css" href="css/quickspace.css" />
+        <link rel="stylesheet" type="text/css" href="css/host-amenities.css" />
+         <link href="css/bootstrap-switch.css" rel="stylesheet">
+         <script src="js/bootstrap-switch.js"></script>
+
         <title>QuickSpace</title>
     </head>
     <body>
@@ -15,20 +19,36 @@
                 <td class="headerIcon"><a href='profile.html'><img class='iconImg' src='img/backIcon.png' ></a></td>
                  <td class="headerText">Your listings</td>
                 <td class="headerIcon"><a href='index.html'><img class='iconImg' src='img/homeIcon.png' ></a></td>
-            </tr></table>        
+            </tr></table>      
+
         </div>
         <div class="inputbody" style="top:10%">
             <div class="largeScrollable" style='height:95%'>
-                <a href="view-space.html">
-                    <img src="img/privateOfficeSpace.png"/>
-                </a>
-                <INPUT TYPE="submit" VALUE="Edit" class="centered gradient btn btn-primary btn-lg" style="font-size:18px;padding:7px">
-                <hr/>
-                <a href="view-space.html">
-                    <img src="img/studyRoom.png"/>
-                </a>
-                  <INPUT TYPE="submit" VALUE="Edit" class="centered gradient btn btn-primary btn-lg" style="font-size:18px;padding:7px">
+                <div>
+                    <a href="view-space.html">
+                        <img src="img/privateOfficeSpace-small.png"/>
+                    </a>
+                    <INPUT TYPE="submit" VALUE="Edit" class="centered gradient btn btn-primary btn-lg" style="font-size:18px;padding:7px">
+                     <p style="text-align:center;font-size:16px;margin-top:15px">currently available for rental?</p>
+                    <div class="btn-group btn-toggle" style="left:30%"> 
+                        <button class="btn btn-sm btn-default" style="font-size: 14px;padding: 10px 15px;letter-spacing: 0px;">Yes</button>
+                        <button class="btn btn-sm btn-primary active " style="font-size: 14px; padding: 10px 12px;">No</button>
+                    </div>
+                </div>
 
+                <hr/>
+                <hr/>
+                <div>
+                    <a href="view-space.html">
+                        <img src="img/studyRoom.png"/>
+                    </a>
+
+                    <p style="text-align:center;font-size:16px;margin-top:15px">currently available for rental?</p>
+                    <div class="btn-group btn-toggle" style="left:30%"> 
+                        <button class="btn btn-sm btn-default" style="font-size: 14px;padding: 10px 15px;letter-spacing: 0px;">Yes</button>
+                        <button class="btn btn-sm btn-primary active " style="font-size: 14px; padding: 10px 12px;">No</button>
+                    </div>
+                </div>
             </div>
             <FORM METHOD="LINK" ACTION="host-name.html">
                 <INPUT TYPE="submit" VALUE="Add Listing" class="gradient centered btn btn-primary btn-lg">
@@ -42,5 +62,18 @@
             app.initialize();
         </script>
         <script type="text/javascript" src="js/bootstrap.js"></script>
-    </body>
+        <script type="text/javascript">
+            $('.btn-toggle').click(function() {
+              $(this).find('.btn').toggleClass('active');  
+    
+              if ($(this).find('.btn-primary').size()>0) {
+                $(this).find('.btn').toggleClass('btn-primary');
+              }
+            });
+
+            $('form').submit(function(){
+              return false;
+            });
+
+        </script>    </body>
 </html>
